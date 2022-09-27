@@ -1,12 +1,9 @@
-#include "stdio.h"
-#include "math.h"
-#include <iostream>
-using namespace std;
+#include "example.h"
 
-float calcularIMC (int peso, float altura)
+float calcularIMC(int peso, int altura)
 {
     
-   float imc = peso/(altura*altura);
+    float imc = peso/(altura*altura);
   
     return imc;
 }

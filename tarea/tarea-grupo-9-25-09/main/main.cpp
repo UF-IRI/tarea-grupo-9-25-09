@@ -1,12 +1,9 @@
-#include <stdio.h> 
-#include <iostream>
-using namespace std;
+#include "example.h"
 
-int main()
-{
-    int peso;
-    float IMC, altura;
-    float a, b, c;
+int main() {
+    int peso = 0;
+    float IMC = 0, altura = 0;
+    float a = 0, b = 0, c = 0;
 
     do
     {
@@ -14,7 +11,7 @@ int main()
         cin >> altura;
         cout << "Ingrese su peso: " << endl;
         cin >> peso;
-    } while (peso > 0 && altura > 0);
+    } while (peso < 1 || altura < 1);
 
     IMC = calcularIMC(peso, altura);
     cout << "su indice de masa corporal es de: "<<IMC << endl;
