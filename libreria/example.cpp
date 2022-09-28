@@ -1,12 +1,19 @@
 #include "example.h"
 
-float calcularIMC(int peso, int altura)
+float calcularIMC(int peso, float altura)
 {
-    
-    float imc = peso/(altura*altura);
+    float imc=0;
+    if (peso==0||altura==0)
+    {
+        return -1;
+    }
+    else
+    {
+        imc = peso/(altura*altura);
+    }
   
     return imc;
-}
+} 
 
 void resolvente(int a, int b, int c)
 {
@@ -14,6 +21,12 @@ void resolvente(int a, int b, int c)
     float x, x1, x2 = 0;
 
     discriminante = sqrt( (b*b) - 4 * a*c);
+
+    if(a==0)
+    {
+        cout<<"Ingrese una ecuación de segundo grado.";
+        return;
+    }
     
     if (discriminante == 0)
     {

@@ -26,7 +26,7 @@ int main() {
         cin >> b;
         cout << "Ingrese c";
         cin >> c;
-    } while (a > 0);
+    } while (a == 0);
 
     resolvente(a, b, c);
 
